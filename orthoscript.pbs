@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+### this script will run orthoFinder software on an HPC cluster. take note of the specifications.
+
+#PBS -l nodes=1:ppn=18
+#PBS -l walltime=96:00:00
+#PBS -A lp_cosubi
+#PBS -m abe
+
+cd $VSC_SCRATCH
+
+module purge
+module load OrthoFinder/2.3.7-intel-2018a-Python-2.7.14
+
+orthofinder -t 36 -f Proteome 
