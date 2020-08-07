@@ -6,17 +6,17 @@ The codes used in this project follow this order:
 
 (a) upload.sh ---> uploads genome sequences to PHASTER and downloads the results from server.
 
-(b) prodigalScript.sh ---> this script is used to predict genes in lactobacilli genomes with prodigal software. 
+(b) prodigalScript.sh ---> this script was used to predict genes in lactobacilli genomes with prodigal software. 
 
 (c) extractGenes.py --->  This script will extract the amino acid sequences corresponding to the gene coordinates of prophages in each genome. 
 
-(d) orthoscript.pbs ---> The extracted prophage genes will be analyzed with Orthofinder in HPC cluster to generate Orthogroups. 
+(d) orthoscript.pbs ---> The extracted prophage genes will be analyzed with Orthofinder in an HPC cluster to generate Orthogroups. 
 
-(e) extractClusters.R ---> Perform clustering on "Orthogroups.GenesCount.csv" which is the result from Orthofinder and select cut off height using dynamicTreeCut package.
+(e) extractClusters.R ---> Perform hierarchical clustering on "Orthogroups.GenesCount.csv" and select cut off height using dynamicTreeCut R package.
 
-(f) geneClusters.py ---> The gene clusters will be analyzed in respect to host lifestyle and taxonomy to produce datasets for visualization.
+(f) geneClusters.py ---> The gene clusters will be analyzed in respect to host lifestyles and taxonomy to produce datasets for visualization.
 
-(g) vizScript.R ---> for visualization of results. 
+(g) vizScript.R ---> used to visualize results. 
 
 (h) make_heatmap.R ---> creates heatmap of prophage and prophage family distribution
 
