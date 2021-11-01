@@ -1,6 +1,6 @@
 # thesisProject
 
-This thesis project is based on comparative genomics and phylogenetics analysis.
+This thesis project focused on comparative genomics and phylogenetics analysis.
 
 These codes were used to analyze genomic data and show evidence of Co-evolution between Lactobacillus bacteria and Bacteriophages
 
